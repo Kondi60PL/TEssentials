@@ -1,5 +1,5 @@
 #TEssentials
-##Download: <a href="http://www.mediafire.com/download/70pdk769uudtbf0/KSlots.jar">LINK</a>
+##Download: Wkrotce
 ###O co chodzi w tym pluginie?
 **TEssentials** to prosty plugin typu Essentials. Znajdziesz w nim duzo funkcji administracyjnych i dla graczy!
 
