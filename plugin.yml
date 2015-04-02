@@ -1,0 +1,24 @@
+name: TEssentials
+main: me.taikun8.essentials.Main
+version: 0.1 Alpha
+author: Taikun8
+description: Essentials napisany przez Taikun8.
+
+commands:
+  broadcast:
+    description: Globalna wiadomosc.
+  changelore:
+    description: Zmienia opis przedmiotu.
+  changename:
+    description: Zmienia nazwe przedmiotu.
+  chat:
+    description: Manipulacja chatem.
+permissions:
+  tessentials.*:
+    default: false
+    children:
+       tessentials.broadcast: true
+       tessentials.changelore: true
+       tessentials.changename: true
+       tessentials.chat: true
+       tessentials.chat.bypass: true
