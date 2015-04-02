@@ -6,26 +6,26 @@
 ==========
 ###Domyślny config:
 
-WKROTCE
+`Wkrotce`
 
 #####Może po kolei:
-WKROTCE
+`Wkrotce`
 ==========
 
 
 =========
 ###Komendy:
-- `**/chat <on/off/cc>**` - Manipuluje chatem. Wlacza/Wylacza/Czysci
-- `**/broadcast <tekst>**` - Wysyla globalna wiadomosc. 
-- `**/changelore <tekst>**` - Zmienia opis przedmiotu.
-- `**/changename <tekst>**` - Zmienia nazwe przedmiotu.
+- **/chat <on/off/cc>** - Manipuluje chatem. Wlacza/Wylacza/Czysci
+- **/broadcast <tekst>** - Wysyla globalna wiadomosc. 
+- **/changelore <tekst>** - Zmienia opis przedmiotu.
+- **/changename <tekst>** - Zmienia nazwe przedmiotu.
 
 ###TO-DO:
-- Dodanie komendy administracyjnej `**/ban**`
-- Dodanie komendy administracyjnej `**/kick**`
+- Dodanie komendy administracyjnej **/ban**
+- Dodanie komendy administracyjnej **/kick**
 - Dodanie funkcji AutoMessage
-- Dodanie komendy administracyjnej `**/gamemode**`
-- Dodanie komendy administracyjnej `**/heal <nick> | /heal**`
-- Dodanie komendy administracyjnej `**/tp**`
-- Dodanie komendy `**/home | /sethome**`
-- Dodanie funkcji `**PREFIX, SUFFIX, PLAYER, MESSAGE, GUILD, RANK**` na chat
+- Dodanie komendy administracyjnej **/gamemode**
+- Dodanie komendy administracyjnej **/heal <nick> | /heal**
+- Dodanie komendy administracyjnej **/tp**`
+- Dodanie komendy **/home | /sethome**
+- Dodanie funkcji **PREFIX, SUFFIX, PLAYER, MESSAGE, GUILD, RANK** na chat
