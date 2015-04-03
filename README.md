@@ -1,5 +1,5 @@
 #TEssentials
-##Download: <a href="http://speedy.sh/nG7My/TEssentials.jar">LINK</a>http://speedy.sh/nG7My/TEssentials.jar
+##Download: <a href="http://speedy.sh/nG7My/TEssentials.jar">LINK</a>
 ###O co chodzi w tym pluginie?
 **TEssentials** to prosty plugin typu Essentials. Znajdziesz w nim duzo funkcji administracyjnych i dla graczy!
 
