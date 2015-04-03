@@ -25,7 +25,7 @@ public class TimeUtil implements Listener{
 			return;
 		}
 		list.add(player);
-		Util.sendMessage(player, "&7Zaczekaj &c" + Main.getInst().getConfig().getLong("tp-delay") + " sekund!".replace("L", ""));
+		Util.sendMessage(player, "&Teleportacja nastapi za &c" + Main.getInst().getConfig().getLong("tp-delay") + " sekund!".replace("L", ""));
 		Main.getInst().getServer().getScheduler().runTaskLater(Main.getInst(), new Runnable() {
 		    public void run() {
 		    	if(list.contains(player)){

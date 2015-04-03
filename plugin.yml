@@ -1,6 +1,6 @@
 name: TEssentials
 main: me.taikun8.essentials.Main
-version: 0.1 Alpha
+version: 0.3 Alpha
 author: Taikun8
 description: Essentials napisany przez Taikun8.
 
@@ -14,7 +14,7 @@ commands:
   chat:
     description: Manipulacja chatem.
   ci:
-    description: Globalna wiadomosc.
+    description: Czyszczenie ekwipunku.
   enchant:
     description: Zmienia opis przedmiotu.
   fly:
@@ -23,7 +23,7 @@ commands:
     description: Manipulacja chatem.
     aliases: [gm, gamem, gmode]
   head:
-    description: Globalna wiadomosc.
+    description: Dostaje sie glowe danego gracza.
   heal:
     description: Zmienia opis przedmiotu.
   setspawn:
@@ -31,9 +31,34 @@ commands:
   spawn:
     description: Manipulacja chatem.
   tp:
-    description: Globalna wiadomosc.
+    description: Teleportacja pomiedzy graczami.
   treload:
     description: Zmienia opis przedmiotu.
+  helpop:
+    description: Komunikacja z administratorem.
+    aliases: [pomoc, admin]
+  help:
+    description: Lista komend dostepnych.
+  msg:
+    description: Prywatna wiadomosc.
+    aliases: [tell, pw]
+  back:
+    description: Powrot do poprzedniej lokalizacji.
+  whois:
+    description: Informacje na temat gracza.
+  invsee:
+    description: Ekwipunek gracza.
+  whois:
+    description: Odpowiada na prywatna wiadomosc.
+    aliases: [r, re]
+  world:
+    description: Teleportacja pomiedzy swiatami.
+  time:
+    description: Zmiana czasu na serwerze.
+  weather:
+    description: Zmiana pogody na serwerze.
+  tppos:
+    description: Teleportacja pomiedzy koordynatami na serwerze.
 permissions:
   tessentials.*:
     default: false
@@ -53,3 +78,18 @@ permissions:
        tessentials.spawn: true
        tessentials.tp: true
        tessentials.treload: true
+       tessentials.helpop: true
+       tessentials.help: true
+       tessentials.msg: true
+       tessentials.back: true
+       tessentials.whois: true
+       tessentials.invsee: true
+       tessentials.reply: true
+       tessentials.world: true
+       tessentials.motd: true
+       tessentials.time: true
+       tessentials.weather: true
+       tessentials.tppos: true
+       tessentials.clearmsg: true
+       tessentials.sign: true
+       tessentials.helpop.see: true

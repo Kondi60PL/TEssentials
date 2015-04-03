@@ -46,14 +46,14 @@ public class Join implements Listener{
 		offline = Bukkit.getOfflinePlayers().length;
 		online = Bukkit.getOnlinePlayers().length;
 		licznik = offline + online;
-		Util.sendMessage(p, " &7§m-------------§2§l NASZHC§7§l.PL §7§m-------------");
-		Util.sendMessage(p, "  §7» §aWitaj: §3" + p.getName() + ",");
-		Util.sendMessage(p, "  §7» §aGraczy online: §3" + Bukkit.getOnlinePlayers().length + "/" + Main.getInst().getConfig().getInt("config.slots") + ",");
+		Util.sendMessage(p, " &7&m-------------&2&l NASZHC&7&l.PL &7&m-------------");
+		Util.sendMessage(p, "  &7» §aWitaj: &3" + p.getName() + ",");
+		Util.sendMessage(p, "  &7» §aGraczy online: &3" + Bukkit.getOnlinePlayers().length + "/" + Main.getInst().getConfig().getInt("config.slots") + ",");
 		p.sendMessage(new StringBuilder("  §7 §aUnikalnych odwiedzin: §3").append(licznik).toString() + ",");
-		Util.sendMessage(p, "  §7» §aTS3: §3NaszHc.pl");
-		Util.sendMessage(p, "  §7» §aFacebook: §3http://fb.com/NaszHc");
-		Util.sendMessage(p, "  §7» §aWWW: §3http://naszhc.pl.");
-		Util.sendMessage(p, " §7§m-----------------------------------");
+		Util.sendMessage(p, "  &7» §aTS3: §3NaszHc.pl");
+		Util.sendMessage(p, "  &7» §aFacebook: §3http://fb.com/NaszHc");
+		Util.sendMessage(p, "  &7» §aWWW: §3http://naszhc.pl.");
+		Util.sendMessage(p, " &7&m-----------------------------------");
 	}
 
 }

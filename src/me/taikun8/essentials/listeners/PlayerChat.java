@@ -73,8 +73,8 @@ public class PlayerChat implements Listener{
 	@EventHandler(priority = EventPriority.LOW)
 	public void chatevent(AsyncPlayerChatEvent e){
 		String format = Main.getInst().getConfig().getString("chat-format");
-//		format = format.replace("{PREFIX}", new StringBuilder().append(Main.getChat().getPlayerPrefix(e.getPlayer()))).toString());
-//	    format = format.replace("{SUFFIX}", Main.getChat().getPlayerSuffix(e.getPlayer()));
+		format = format.replace("{PREFIX}", new StringBuilder().append(Main.getChat().getPlayerPrefix(e.getPlayer()))).toString();
+	    format = format.replace("{SUFFIX}", Main.getChat().getPlayerSuffix(e.getPlayer()));
 	    format = format.replace("{PLAYER}", "%1$s");
 	    format = format.replace("{MESSAGE}", "%2$s");
 		e.setFormat(Util.setHEX(format));

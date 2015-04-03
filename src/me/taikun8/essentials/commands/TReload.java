@@ -13,11 +13,11 @@ public class TReload implements CommandExecutor{
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args){
 		if(cmd.getName().equalsIgnoreCase("trelaod")){
 			if(sender.hasPermission("tessentials.reload")){
-				Util.sendMessage(sender, "&7Trwa przeladowywanie pluginu &cTEssentials v0.1 Alpha&7!");
-				LogUtil.info("Trwa przeladowywanie pluginu TEssentials v0.1 Alpha!");
+				Util.sendMessage(sender, "&7Trwa przeladowywanie pluginu &cTEssentials v0.3 Alpha&7!");
+				LogUtil.info("Trwa przeladowywanie pluginu TEssentials v0.3 Alpha!");
 				Main.getInst().reloadConfig();
-				Util.sendMessage(sender, "&7Pomyslnie przeladowano plugin &cTEssentials v0.1 Alpha&7!");
-				LogUtil.info("Pomyslnie przeladowano plugin TEssentials v0.1 Alpha!");
+				Util.sendMessage(sender, "&7Pomyslnie przeladowano plugin &cTEssentials v0.3 Alpha&7!");
+				LogUtil.info("Pomyslnie przeladowano plugin TEssentials v0.3 Alpha!");
 			} else {
 				Util.sendMessage(sender, "&cNie masz uprawnien do uzycia tej komendy");
 				return false;

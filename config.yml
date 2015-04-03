@@ -1,0 +1,77 @@
+# [------------------------------]
+# [    tEssentials v0.3 ALPHA
+# [------------------------------]
+
+# [------------------------------]
+# [      Podstawowe rzeczy 
+# [------------------------------]
+# Czy ma byæ w³¹czone szczegó³owe debugowanie (szczegó³owe informacje wysy³ane do konsoli)
+debug: true
+# Czy opcje wymagaj¹ce pluginu BarAPI maj¹ byæ w³¹czone
+barapi: true
+# G³ówne serwerowe motd
+server-motd: '&cNaszHc!'
+ 
+# [------------------------------]
+# [            Chat 
+# [------------------------------]
+# Format chatu
+chat-format: '&8[{PREFIX}&8] &f{PLAYER}&8: &7{MESSAGE}'
+# Wiadomoœæ wy³¹czania chatu
+chat-off: '&2Chat zostal wylaczony przez &c{PLAYER}&2!'
+# Wiadomoœæ w³¹czania chatu
+chat-on: '&2Chat zostal wlaczony przez &c{PLAYER}&2!'
+# Wiadomoœæ czyszczenia chatu
+chat-clear: '&2Chat zostal wyczyszczony przez &c{PLAYER}&2!'
+# Czy ma byæ w³¹czona blokada URL ( - BETA!)
+url-block: true
+# Czy ma byæ w³¹czona blokada IP ( - BETA!)
+ip-block: true
+# Czy ma byæ w³¹czona blokada przekleñstw i nazw popularnych serwerów 
+words-block: true
+
+# [------------------------------]
+# [           Helpop
+# [------------------------------]
+# Co ile sekund mo¿na wysy³aæ /helpop 
+helpop-delay: 10
+# Format helpopu
+helpop-format: '&8[&4Helpop&8] &7{PLAYER}: &c{MESSAGE}'
+
+# [------------------------------]
+# [           ChangeItem
+# [------------------------------]
+# Czym ma sie usuwac nazwe itemu lub opis
+changeitem-remove: '-remove'
+
+# [------------------------------]
+# [         Join/Leave
+# [------------------------------]
+# Format dolaczania na serwer (zostaw '' jezeli chcesz wylaczyc)
+join-format: ''
+# Format opuszczania serwera (zostaw '' jezeli chcesz wylaczyc)
+leave-format: ''
+
+# [------------------------------]
+# [         Teleportation
+# [------------------------------]
+# Swiat w którym znajduje siê spawn
+spawn-world: 'world'
+# Okres oczekiwania na teleport (w sekundach)
+tp-delay: 10
+  
+# [------------------------------]
+# [          ClearItems
+# [------------------------------]
+# Swiat który ma byæ wyczyszczony
+clear-world: 'world'
+
+
+# Druga wiadomoœæ, ju¿ po wyczyszczeniu
+clear-cleared: '&8[&cClearItems&8] &7Wyczyszczono wszystkie przedmioty lezace na ziemi!'
+
+# Ile sekund po ostrze¿eniu ma byæ czyszczony serwer
+clear-delay-1: 30
+
+# Co ile sekund ma byæ wykonywane czyszczenie itemów
+clear-delay-2: 700

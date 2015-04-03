@@ -46,7 +46,7 @@ public class Helpop implements CommandExecutor{
 			    Bukkit.getConsoleSender().sendMessage(Util.setHEX(msg));
 			    if(p.isOp()){
 			    	if(p.isOnline()){
-				        if (p.hasPermission("qessentials.helpop.see")){
+				        if (p.hasPermission("tessentials.helpop.see")){
 				          p.sendMessage(Util.setHEX(msg));
 				        }
 			        }
