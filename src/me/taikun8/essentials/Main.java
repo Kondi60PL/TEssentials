@@ -61,33 +61,8 @@ public class Main extends JavaPlugin{
 		instance = this;
 		saveDefaultConfig();
 		registerEvents();
-		registerCommands();
-		Bukkit.getServer().getScheduler().scheduleSyncRepeatingTask(this, new ClearItems(), 0L, Main.getInst().getConfig().getLong("clear-delay-2") * 20);
-	
-		ItemStack ender = new ItemStack(Material.ENDER_CHEST, 1);
-		@SuppressWarnings("deprecation")
-		ShapedRecipe enderchest = new ShapedRecipe(ender).shape(new String[] {
-				"AAA",
-				"ABA",
-				"AAA"})
-				.setIngredient('A', Material.OBSIDIAN, 3)
-				.setIngredient('B', Material.ENDER_PEARL, 2);
-			Main.getInst().getServer().addRecipe(enderchest);
-	
-	}
-	
-	public void onDisable() {}
-
-	public static Main getInst(){
-		return instance;
-	}
-	
-	public void onLoad()
-	{
-		instance = this;
-	}
-	
-	private void registerCommands(){
+		
+		
 		getCommand("broadcast").setExecutor(new Broadcast());
 		getCommand("changelore").setExecutor(new ChangeLore());
 		getCommand("changename").setExecutor(new ChangeName());
@@ -115,6 +90,30 @@ public class Main extends JavaPlugin{
 		getCommand("weather").setExecutor(new Weather());
 		getCommand("tppos").setExecutor(new Tppos());
 		
+		
+		Bukkit.getServer().getScheduler().scheduleSyncRepeatingTask(this, new ClearItems(), 0L, Main.getInst().getConfig().getLong("clear-delay-2") * 20);
+	
+		ItemStack ender = new ItemStack(Material.ENDER_CHEST, 1);
+		@SuppressWarnings("deprecation")
+		ShapedRecipe enderchest = new ShapedRecipe(ender).shape(new String[] {
+				"AAA",
+				"ABA",
+				"AAA"})
+				.setIngredient('A', Material.OBSIDIAN, 3)
+				.setIngredient('B', Material.ENDER_PEARL, 2);
+			Main.getInst().getServer().addRecipe(enderchest);
+	
+	}
+	
+	public void onDisable() {}
+
+	public static Main getInst(){
+		return instance;
+	}
+	
+	public void onLoad()
+	{
+		instance = this;
 	}
 	
 	private void registerEvents(){

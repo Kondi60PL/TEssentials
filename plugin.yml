@@ -48,9 +48,6 @@ commands:
     description: Informacje na temat gracza.
   invsee:
     description: Ekwipunek gracza.
-  whois:
-    description: Odpowiada na prywatna wiadomosc.
-    aliases: [r, re]
   world:
     description: Teleportacja pomiedzy swiatami.
   time:
@@ -59,6 +56,11 @@ commands:
     description: Zmiana pogody na serwerze.
   tppos:
     description: Teleportacja pomiedzy koordynatami na serwerze.
+  reply:
+    description: Odpowiada na prywatna wiadomosc.
+    aliases: [r, re]
+  motd:
+    description: Zmienia globalne MOTD.
 permissions:
   tessentials.*:
     default: false

@@ -16,7 +16,7 @@ public class Back implements CommandExecutor{
 		if(cmd.getName().equalsIgnoreCase("back")){
 			if(p.hasPermission("tessentials.back")){
 				if(!(sender instanceof Player)){
-					Util.sendMessage(p, "&cMusisz byc na serwerze");
+					Util.sendMessage(sender, "&cMusisz byc na serwerze");
 					return false;
 				}
 				if(BackUtil.getLastLocation(p) == null){

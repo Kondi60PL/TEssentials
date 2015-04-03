@@ -34,7 +34,7 @@ public class Whois implements CommandExecutor{
 						Util.sendMessage(p, "&7  Polozenie: &cx: " + p.getLocation().getBlockX()
 						+ ", y: " + p.getLocation().getBlockY()
 						+ ", z: " + p.getLocation().getBlockZ()
-						+ ", world: " + p.getLocation().getWorld());
+						+ ", world: " + p.getLocation().getWorld().getName());
 						return false;
 					}else if (args.length == 1){
 						Player p1 = Bukkit.getPlayerExact(args[0]);
@@ -47,7 +47,7 @@ public class Whois implements CommandExecutor{
 							Util.sendMessage(p, "&7  Polozenie: &cx: " + p1.getLocation().getBlockX()
 							+ ", y: " + p1.getLocation().getBlockY()
 							+ ", z: " + p1.getLocation().getBlockZ()
-							+ ", world: " + p1.getLocation().getWorld());
+							+ ", world: " + p1.getLocation().getWorld().getName());
 							return false;
 						}else{
 							Util.sendMessage(p, "&cTaki gracz nie jest online!");
