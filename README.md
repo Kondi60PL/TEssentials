@@ -111,4 +111,4 @@ clear-delay-2: 700
 - **/reply <tekst>** - Odpowiedz na prywatna wiadomosc [ULATWIENIE]. 
 - **/chat <off/on/clear>** - Manipulacja chatem.
 - **/fly <on/off> <nick>** - Wlaczanie lub wylaczanie chatu.
-- **/world <swiat> ** - Teleportacja pomiedzy swiatami.
+- **/world <swiat>** - Teleportacja pomiedzy swiatami.
