@@ -50,6 +50,8 @@ public class ChangeLore implements CommandExecutor{
 				    item.setItemMeta(meta);
 				    Util.sendMessage(p, "&7Poprawnie ustawiono opis: &c" + Util.setHEX(mb.toString().replace(Main.getInst().getConfig().getString("changeitem-remove"), "&cwyczyszczono opis!")));
 				}
+			} else {
+				Util.sendMessage(p, "&cNie masz uprawnien do uzycia tej komendy");
 			}
 		}
 		return false;

@@ -46,6 +46,8 @@ public class ChangeName implements CommandExecutor{
 						item.setItemMeta(meta);
 						Util.sendMessage(p, "&7Poprawnie zmieniono nazwe na: &c" + Util.setHEX(mb.toString().replace(Main.getInst().getConfig().getString("changeitem-remove"), "&cwyczyszczono nazwe!")));
 					}
+			} else {
+				Util.sendMessage(p, "&cNie masz uprawnien do uzycia tej komendy");
 			}
 		}
 		return false;

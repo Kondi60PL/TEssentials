@@ -13,6 +13,27 @@ commands:
     description: Zmienia nazwe przedmiotu.
   chat:
     description: Manipulacja chatem.
+  ci:
+    description: Globalna wiadomosc.
+  enchant:
+    description: Zmienia opis przedmiotu.
+  fly:
+    description: Zmienia nazwe przedmiotu.
+  gamemode:
+    description: Manipulacja chatem.
+    aliases: [gm, gamem, gmode]
+  head:
+    description: Globalna wiadomosc.
+  heal:
+    description: Zmienia opis przedmiotu.
+  setspawn:
+    description: Zmienia nazwe przedmiotu.
+  spawn:
+    description: Manipulacja chatem.
+  tp:
+    description: Globalna wiadomosc.
+  treload:
+    description: Zmienia opis przedmiotu.
 permissions:
   tessentials.*:
     default: false
@@ -22,3 +43,13 @@ permissions:
        tessentials.changename: true
        tessentials.chat: true
        tessentials.chat.bypass: true
+       tessentials.clearinv: true
+       tessentials.enchant: true
+       tessentials.fly: true
+       tessentials.gamemode: true
+       tessentials.head: true
+       tessentials.heal: true
+       tessentials.setspawn: true
+       tessentials.spawn: true
+       tessentials.tp: true
+       tessentials.treload: true

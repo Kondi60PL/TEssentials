@@ -47,6 +47,8 @@ public class Chat implements CommandExecutor{
 						}
 					}
 				}
+			} else {
+				Util.sendMessage(p, "&cNie masz uprawnien do uzycia tej komendy");
 			}
 		}
 		return false;

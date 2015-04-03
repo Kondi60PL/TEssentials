@@ -8,30 +8,32 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-public class Broadcast implements CommandExecutor{
+public class Invsee implements CommandExecutor{
 	
 	public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args){
 		Player p = (Player) sender;
-		if(cmd.getName().equalsIgnoreCase("broadcast")){
-			if(p.hasPermission("tessentials.broadcast")){
+		if(cmd.getName().equalsIgnoreCase("spawn")){
+			if(p.hasPermission("tessentials.spawn")){
 				if(!(sender instanceof Player)){
-					Util.sendMessage(sender, "§cMusisz byc na serwerze!");
+					Util.sendMessage(p, "&cMusisz byc na serwerze");
 					return false;
 				}
-				if(args.length == 1){
-					Util.sendMessage(p, "§cUzycie: §a/broadcast <tekst>");
+				if(args.length == 0){
+					Util.sendMessage(p, "&cUzycie:&a /invsee <nick>");
 					return false;
+				}else if (args.length == 1){
+					Player pl = Bukkit.getPlayerExact(args[0]);
+					if(!(pl == null)){
+						p.openInventory(pl.getInventory());
+						return false;
+					}else{
+						Util.sendMessage(p, "&cTen gracz nie jest online!");
+						return false;
+					}
 				}
-				    StringBuilder mb = new StringBuilder();
-				    for (String a : args) {
-				        if (mb.length() > 0) {
-				            mb.append(" ");
-				        }
-				        mb.append(a);
-				    }
-				    Bukkit.broadcastMessage(Util.setHEX("&8[&4Ogloszenie&8]&a" + mb.toString()));
 			} else {
 				Util.sendMessage(p, "&cNie masz uprawnien do uzycia tej komendy");
+				return false;
 			}
 		}
 		return false;
